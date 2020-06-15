@@ -1,0 +1,36 @@
+<html>
+  <head><div>
+    <h1>Trinkgeld</h1> </div>
+    <link href="page.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+  <div>
+    <h3>Das ist eine Webseite, um Trinkgeld zu berechnen. </h3>
+     <form>
+		<label for="billAmount"> Gesamtkosten in €: </label><br>
+		<input type="float" id="billAmount" name="billAmount"><br>
+
+	 </form>
+<form action="select.html">
+<label>Bewertung des Service auf einer Skala von 1-5:
+	<select type="number" id="service" name ="5 Sterne" size="5">
+		<option>1</option>
+		<option>2</option>
+		<option>3</option>
+		<option>4</option>
+		<option>5</option>
+	</select>
+	</label>
+</form>
+ 	<label for="people"> Anzahl der Personen: </label><br>
+	<input type="number" id="people" name="people"><br>
+</form>
+    </p>
+  </div>
+
+<br><br>
+Das empfohlene Trinkgeld pro Person beträgt (in €): <output id="output"></output>
+<button type="button" id="berechnen"> Trinkgeld berechnen </button>
+</body>
+<script src="main.js"></script>
+</html>
